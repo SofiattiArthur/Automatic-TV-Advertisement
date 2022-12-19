@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['magic',['MAGIC',['../interface_8h.html#aed6cc71dc91a7ffb20aa4b5e317f2f54',1,'MAGIC(FILE *fil):&#160;interface.c'],['../interface_8c.html#aed6cc71dc91a7ffb20aa4b5e317f2f54',1,'MAGIC(FILE *fil):&#160;interface.c']]],
+  ['matching',['matching',['../matching_8h.html#a605712782290a5f7904de5debb4b8743',1,'matching(int16_t **prop, int16_t **prog, unsigned int sp, unsigned int sg, int *t, int *vr, char flag, unsigned char *g):&#160;matching.c'],['../matching_8c.html#a605712782290a5f7904de5debb4b8743',1,'matching(int16_t **prop, int16_t **prog, unsigned int sp, unsigned int sg, int *t, int *vr, char flag, unsigned char *g):&#160;matching.c']]],
+  ['max',['max',['../coef__dist_8h.html#ad4d2f79ccb221c27d5f4daa5f02e2db3',1,'max(int16_t **vec, unsigned int s):&#160;coef_dist.c'],['../coef__dist_8c.html#ad4d2f79ccb221c27d5f4daa5f02e2db3',1,'max(int16_t **vec, unsigned int s):&#160;coef_dist.c']]],
+  ['maximus',['maximus',['../matching_8h.html#a1ca6eef72865f2a643baf4d93f057e43',1,'maximus(int32_t *vec, unsigned int s, unsigned int *k):&#160;matching.c'],['../matching_8c.html#a1ca6eef72865f2a643baf4d93f057e43',1,'maximus(int32_t *vec, unsigned int s, unsigned int *k):&#160;matching.c']]],
+  ['min',['min',['../coef__dist_8h.html#a8cb8fe468d88f16a5060e3b086acb3e8',1,'min(int16_t **vec, unsigned int s):&#160;coef_dist.c'],['../coef__dist_8c.html#a8cb8fe468d88f16a5060e3b086acb3e8',1,'min(int16_t **vec, unsigned int s):&#160;coef_dist.c']]],
+  ['minimus',['minimus',['../matching_8h.html#af6c2af37881dbb3667b72f46cd684ce8',1,'minimus(int32_t *vec, unsigned int s, unsigned int *k):&#160;matching.c'],['../matching_8c.html#af6c2af37881dbb3667b72f46cd684ce8',1,'minimus(int32_t *vec, unsigned int s, unsigned int *k):&#160;matching.c']]],
+  ['myfgets',['myfgets',['../interface_8h.html#abfd6bbe1ffedcb62fd82200087938ae7',1,'myfgets(char *fname, unsigned int s, FILE *fil):&#160;interface.c'],['../interface_8c.html#abfd6bbe1ffedcb62fd82200087938ae7',1,'myfgets(char *fname, unsigned int s, FILE *fil):&#160;interface.c']]]
+];

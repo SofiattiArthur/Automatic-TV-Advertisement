@@ -1,0 +1,16 @@
+digraph "coef_dist.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="coef_dist.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="matching.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matching_8h.html",tooltip="Operaçoes de analise macroscópica das informaçoes geradas na comparaçao entre propaganda e programaçã..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="interface.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_8h.html",tooltip="Operaçoes de interface com o usuario: recebimento de parametros, geracao de relatorio, comunicaçao de erros. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="interface.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_8c.html"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="matching.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matching_8c.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="coef_dist.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$coef__dist_8c.html"];
+}

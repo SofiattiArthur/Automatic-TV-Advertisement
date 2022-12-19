@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title> Módulo de Comparação: Código-Fonte de matching.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname"> Módulo de Comparação
+   </div>
+   <div id="projectbrief">Detecção Automática de Padrões de Áudio em Transmissões de Rádio e TV</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href= "../../../readme.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Arquivos&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definições e Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b0856f6b0d80ccb263b2f415c91f9e17.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">matching.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="matching_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by arthurf on 22/04/16.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"></span><span class="preprocessor">#ifndef MATCHING2_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MATCHING2_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="coef__dist_8h.html">coef_dist.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="matching_8h.html#abcb886298c69fc8c3fce851b6a5fad68">   14</a></span>&#160;<span class="preprocessor">    #define MINJ_DEF        3000                </span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="matching_8h.html#a2748566f4c443ee77aa831e63dbb5ebe">   15</a></span>&#160;<span class="preprocessor">    #define P               243                 </span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="matching_8h.html#aab3c8ecfef25f81b9df422660690ef73">   16</a></span>&#160;<span class="preprocessor">    #define JAN             7                   </span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="matching_8h.html#a7c70057f4ac04e167029eef16e7bb770">   17</a></span>&#160;<span class="preprocessor">    #define DL              5                   </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="matching_8h.html#a2f3c29b896a6ab46f43049d05d34e598">   18</a></span>&#160;<span class="preprocessor">    #define VR_LIM_DEF      500                 </span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="matching_8h.html#ac07ac685cb5a45829729628e00a32344">   19</a></span>&#160;<span class="preprocessor">    #define LIM_SINC_DEF    256                 </span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="matching_8h.html#abe574f6f1df8ee1c0829f67077703d4a">   20</a></span>&#160;<span class="preprocessor">    #define ERRO_G          2                   </span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="matching_8h.html#af43c1bbb4ed10b9d662d3e90532af904">   21</a></span>&#160;<span class="preprocessor">    #define FIND_G          1                   </span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="matching_8h.html#a28d898362c0315a1d455bbaa9f8c15ff">   22</a></span>&#160;<span class="preprocessor">    #define N_FIND_G        0                   </span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">    extern int MINJ;        </span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">    extern int VR_LIM;      </span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">    extern int LIM_SINC;    </span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">    int find_end(int16_t **prop, unsigned int sp);</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    int32_t* <a class="code" href="matching_8h.html#af660ce936931a03db0027fb5cb1778ba">invers</a>(int32_t* vec, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    int32_t* <a class="code" href="matching_8h.html#ae104cbac8693feb96d30e269a0a92ce8">diff</a>(int32_t* vec, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    int32_t <a class="code" href="matching_8h.html#a22901f10774068eafc617f229c445c6a">limiar</a>(int32_t *vec, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    int32_t <a class="code" href="matching_8h.html#a1ca6eef72865f2a643baf4d93f057e43">maximus</a>(int32_t* vec, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>* k);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    int32_t <a class="code" href="matching_8h.html#af6c2af37881dbb3667b72f46cd684ce8">minimus</a>(int32_t* vec, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>* k);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="matching_8h.html#a82be81d4947ac6b7f492347bb8bb2747">tempo</a>(<span class="keywordtype">int</span> k, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="matching_8h.html#aafc24f68097dca5d249a92fb9c060224">ocurr</a>(int32_t** CD, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> scd, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i, int32_t limiar1, int32_t limiar2, <span class="keywordtype">int</span>* vr);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="matching_8h.html#abb01cbd21c9a1059fda34e6e5b43dfe5">CDtrat</a>(int32_t** CD, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> sp, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> sg, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> minJ);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="matching_8h.html#a605712782290a5f7904de5debb4b8743">matching</a>(int16_t** prop, int16_t** prog, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> sp, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> sg, <span class="keywordtype">int</span>* t, <span class="keywordtype">int</span>* vr, <span class="keywordtype">char</span> flag, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* g);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif //MATCHING2_H</span></div>
+<div class="ttc" id="matching_8h_html_a1ca6eef72865f2a643baf4d93f057e43"><div class="ttname"><a href="matching_8h.html#a1ca6eef72865f2a643baf4d93f057e43">maximus</a></div><div class="ttdeci">int32_t maximus(int32_t *vec, unsigned int s, unsigned int *k)</div><div class="ttdef"><b>Definition:</b> matching.c:98</div></div>
+<div class="ttc" id="matching_8h_html_abb01cbd21c9a1059fda34e6e5b43dfe5"><div class="ttname"><a href="matching_8h.html#abb01cbd21c9a1059fda34e6e5b43dfe5">CDtrat</a></div><div class="ttdeci">int CDtrat(int32_t **CD, unsigned int sp, unsigned int sg, unsigned int minJ)</div><div class="ttdef"><b>Definition:</b> matching.c:227</div></div>
+<div class="ttc" id="matching_8h_html_af660ce936931a03db0027fb5cb1778ba"><div class="ttname"><a href="matching_8h.html#af660ce936931a03db0027fb5cb1778ba">invers</a></div><div class="ttdeci">int32_t * invers(int32_t *vec, unsigned int s)</div><div class="ttdef"><b>Definition:</b> matching.c:32</div></div>
+<div class="ttc" id="matching_8h_html_a22901f10774068eafc617f229c445c6a"><div class="ttname"><a href="matching_8h.html#a22901f10774068eafc617f229c445c6a">limiar</a></div><div class="ttdeci">int32_t limiar(int32_t *vec, unsigned int s)</div><div class="ttdef"><b>Definition:</b> matching.c:75</div></div>
+<div class="ttc" id="matching_8h_html_a82be81d4947ac6b7f492347bb8bb2747"><div class="ttname"><a href="matching_8h.html#a82be81d4947ac6b7f492347bb8bb2747">tempo</a></div><div class="ttdeci">int tempo(int k, unsigned int s)</div><div class="ttdef"><b>Definition:</b> matching.c:159</div></div>
+<div class="ttc" id="coef__dist_8h_html"><div class="ttname"><a href="coef__dist_8h.html">coef_dist.h</a></div><div class="ttdoc">Operações referentes ao cálculo da distância entre propaganda e programação em cada ponto...</div></div>
+<div class="ttc" id="matching_8h_html_aafc24f68097dca5d249a92fb9c060224"><div class="ttname"><a href="matching_8h.html#aafc24f68097dca5d249a92fb9c060224">ocurr</a></div><div class="ttdeci">int ocurr(int32_t **CD, unsigned int scd, unsigned int i, int32_t limiar1, int32_t limiar2, int *vr)</div><div class="ttdef"><b>Definition:</b> matching.c:183</div></div>
+<div class="ttc" id="matching_8h_html_ae104cbac8693feb96d30e269a0a92ce8"><div class="ttname"><a href="matching_8h.html#ae104cbac8693feb96d30e269a0a92ce8">diff</a></div><div class="ttdeci">int32_t * diff(int32_t *vec, unsigned int s)</div><div class="ttdef"><b>Definition:</b> matching.c:53</div></div>
+<div class="ttc" id="matching_8h_html_af6c2af37881dbb3667b72f46cd684ce8"><div class="ttname"><a href="matching_8h.html#af6c2af37881dbb3667b72f46cd684ce8">minimus</a></div><div class="ttdeci">int32_t minimus(int32_t *vec, unsigned int s, unsigned int *k)</div><div class="ttdef"><b>Definition:</b> matching.c:129</div></div>
+<div class="ttc" id="matching_8h_html_a605712782290a5f7904de5debb4b8743"><div class="ttname"><a href="matching_8h.html#a605712782290a5f7904de5debb4b8743">matching</a></div><div class="ttdeci">int matching(int16_t **prop, int16_t **prog, unsigned int sp, unsigned int sg, int *t, int *vr, char flag, unsigned char *g)</div><div class="ttdef"><b>Definition:</b> matching.c:279</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 27 de Outubro de 2016 16:23:46 para  Módulo de Comparação por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

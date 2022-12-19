@@ -1,0 +1,17 @@
+Com variáveis em ponto fixo.
+coeficientes da MFCC em inteiros de 16 bits.
+coeficientes da comparação em inteiros de 32 bits.
+
+Utilizando biblioteca confuse-2.7
+Baixado em http://download.savannah.gnu.org/releases/confuse/
+antes de instalar a biblioteca, acrescentar "-fPIC" as flags, no arquivo configure, nas linhas 3565 e 3571.
+
+para instalar:
+extrair o diretorio e entrar nele.
+Executar os comandos:
+    ./configure
+    sudo make
+    sudo make install
+    sudo cp src/confuse.h /usr/local/include/confuse.h
+
+utilizar a flag -lconfuse para compilar e linkar.

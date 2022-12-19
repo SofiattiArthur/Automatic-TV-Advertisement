@@ -1,0 +1,555 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title> Módulo de Extração: Referência do Arquivo DCT.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname"> Módulo de Extração
+   </div>
+   <div id="projectbrief">Detecção Automática de Padrões de Áudio em Transmissões de Rádio e TV</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href= "../../../readme.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Arquivos&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definições e Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c85d3e3c5052e9ad9ce18c6863244a25.html">lib</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definições e Macros</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo DCT.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="DCT_8h_source.html">DCT.h</a>&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependência de inclusões para DCT.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="DCT_8c__incl.png" border="0" usemap="#DCT_8c" alt=""/></div>
+<map name="DCT_8c" id="DCT_8c">
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a4a4b6ec654cebc103b3e88037cf29de8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DCT_8c.html#a4a4b6ec654cebc103b3e88037cf29de8">M_R2</a>&#160;&#160;&#160;1.4142135623731</td></tr>
+<tr class="separator:a4a4b6ec654cebc103b3e88037cf29de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c4825315ce5443b84f148992eea56d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DCT_8c.html#a29c4825315ce5443b84f148992eea56d">M_R2_2</a>&#160;&#160;&#160;0.707106781186548</td></tr>
+<tr class="separator:a29c4825315ce5443b84f148992eea56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ac3ae0584d0b11b8637f3ddc0cbecc2e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DCT_8c.html#ac3ae0584d0b11b8637f3ddc0cbecc2e2">bitrev2</a> (int n, float *ptrt, float *ptrf)</td></tr>
+<tr class="separator:ac3ae0584d0b11b8637f3ddc0cbecc2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81722a8a34caaa16b5e7936cbaef57d1"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DCT_8c.html#a81722a8a34caaa16b5e7936cbaef57d1">W_coef</a> (unsigned int N)</td></tr>
+<tr class="separator:a81722a8a34caaa16b5e7936cbaef57d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2e4a1db340ddcd09b6f0a6c6fd0802b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DCT_8c.html#ab2e4a1db340ddcd09b6f0a6c6fd0802b">litDCT</a> (unsigned int N, float *x, float *ans)</td></tr>
+<tr class="separator:ab2e4a1db340ddcd09b6f0a6c6fd0802b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4aeeff71a80cadd805a8618f1b853e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DCT_8c.html#a9c4aeeff71a80cadd805a8618f1b853e">dct</a> (unsigned int N, float *x, float *y, float *W)</td></tr>
+<tr class="separator:a9c4aeeff71a80cadd805a8618f1b853e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Definições e macros</h2>
+<a class="anchor" id="a4a4b6ec654cebc103b3e88037cf29de8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M_R2&#160;&#160;&#160;1.4142135623731</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a29c4825315ce5443b84f148992eea56d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M_R2_2&#160;&#160;&#160;0.707106781186548</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Funções</h2>
+<a class="anchor" id="ac3ae0584d0b11b8637f3ddc0cbecc2e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bitrev2 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>ptrt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>ptrf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Coloca os dados de entrada na sequencia de bit reverso </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>numero de pontos </td></tr>
+    <tr><td class="paramname">ptrt</td><td>ponteiro para os dados de entrada </td></tr>
+    <tr><td class="paramname">ptrf</td><td>ponteiro para os dados de saida, retorna os dados reordenados e sem zeros entre um dado e outro </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                                           {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">int</span> l,i,n0;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    n0=n;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">for</span> (l=0;   n0&gt;1;   l++, n0&gt;&gt;=1);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">for</span>(i=0;i&lt;n;i++){</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        *ptrf=*(ptrt+<a class="code" href="FFT_8h.html#a4302f2fa5ae9348486ed46acbce0cc98">btrv</a>(i,l));</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        ptrf++;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="ttc" id="FFT_8h_html_a4302f2fa5ae9348486ed46acbce0cc98"><div class="ttname"><a href="FFT_8h.html#a4302f2fa5ae9348486ed46acbce0cc98">btrv</a></div><div class="ttdeci">int btrv(int i, int l)</div><div class="ttdef"><b>Definition:</b> FFT.c:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a9c4aeeff71a80cadd805a8618f1b853e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dct </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>N</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>W</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calcula transformada rapida do cosseno em tempo discreto </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">N</td><td>numero de pontos da transformada </td></tr>
+    <tr><td class="paramname">x</td><td>ponteiro para os dados de entrada </td></tr>
+    <tr><td class="paramname">y</td><td>ponteiro para os dados de saida </td></tr>
+    <tr><td class="paramname">W</td><td>ponteiro para os senos e cossenos da dct </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 caso tudo corra bem </dd>
+<dd>
+Retorna -1 em caso de erro </dd></dl>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                                     {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">int</span> i, j, k, l, rv, s;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">int</span> c;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n, N_2, v1, v2, Mn, N0;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">float</span> *y0, *w0, *yaux;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">float</span> aux;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">//Inicia parâmetros</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    y0=y;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    w0=W;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    N0=N;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    n=N;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    N_2=N&gt;&gt;1;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    i=(int)log(N)/log(2);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    yaux=malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">float</span>)*N);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span>(yaux==NULL) <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">if</span> (i!=N){</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        c = <a class="code" href="DCT_8c.html#ab2e4a1db340ddcd09b6f0a6c6fd0802b">litDCT</a>(N, x, yaux);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">for</span> (i=0;   i&lt;N;    i++)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            y[i]=yaux[i];</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">return</span> c;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">//y=x</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">for</span> (i=0;   i&lt;N;    i++){</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        *y=*x;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        y++;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        x++;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    y=y0;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordflow">if</span>(N==1){</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        free(yaux);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(N==2){</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        aux=(y[0]+y[1])*<a class="code" href="DCT_8c.html#a29c4825315ce5443b84f148992eea56d">M_R2_2</a>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        y[1]=(y[0]-y[1])*<a class="code" href="DCT_8c.html#a29c4825315ce5443b84f148992eea56d">M_R2_2</a>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        y[0]=aux;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        free(yaux);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">while</span>(1){</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="comment">//1 - Butterflies</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">for</span> (i=0;   i&lt;(N_2);    i++){</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            v2 = (N-1)-i;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            aux = y[i] + y[v2];</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            y[v2] = y[i] - y[v2];   </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            y[i] = aux;         </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="comment">//2 - divide o vetor em dois, a primeira metade calcula dct com N/2 elementos com recursividade, a segunda segue o diagrama de Chen. Se N = 4, calcula explicitamente a dct desse vetor</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">if</span>(N&gt;4){</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            y+=N_2; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            n&gt;&gt;=1;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(N==4){</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            aux=(float)(y[0]+y[1])*<a class="code" href="DCT_8c.html#a29c4825315ce5443b84f148992eea56d">M_R2_2</a>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            y[1]=(float)(y[0]-y[1])*<a class="code" href="DCT_8c.html#a29c4825315ce5443b84f148992eea56d">M_R2_2</a>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            y[0]=aux;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            aux=(float)y[2]*(*(W+3))+y[3]*(*(W+2));</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            y[3]=(float)y[3]*(*(W+4))-y[2]*(*(W+5));</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            y[2]=aux;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <a class="code" href="DCT_8c.html#ac3ae0584d0b11b8637f3ddc0cbecc2e2">bitrev2</a>(N0,y0,yaux);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            aux=(float)<a class="code" href="DCT_8c.html#a4a4b6ec654cebc103b3e88037cf29de8">M_R2</a>/sqrt(N0);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="keywordflow">for</span>(i=0;i&lt;N0;i++){</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                *y0 = (*yaux)*aux;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                y0++;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                yaux++;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            free(yaux-N0);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            free(yaux);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="comment">//3 - Multiplicação pelos senos e cossenos e Butterflies das metades</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">for</span> (i=1;   (N_2&gt;&gt;i)&gt;1; i++){           </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="comment">//Multiplicação pelos cossenos e senos</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            c = (1&lt;&lt;i)-2;                           <span class="comment">//c começa em 0 </span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            Mn=N_2/(n);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="keywordflow">for</span> (j=0;   j&lt;(Mn&gt;&gt;1) || j==0;  j++){</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                s=1;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                <span class="keywordflow">for</span> (k=0;   k&lt;(n&gt;&gt;1) &amp;&amp; ((i!=1) || (k&lt;(n&gt;&gt;2))); k++){</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                    <span class="keywordflow">if</span>(k==(n/4)){</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                        s*=-1;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                        W++;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                    }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                    v1 = (n&gt;&gt;2) + j*n + k;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                    v2 = Mn*n - 1 - v1;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                    </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                    aux = -y[v1] * (*W);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                    aux += y[v2] * (*(W+s)) * s;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                    </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                    W+=c;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                                </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                    y[v2] *= *(W+s);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                    y[v2] += y[v1] * (*(W)) * s;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                    y[v1] = aux;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                    </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                    W-=c;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                <span class="keywordflow">if</span>(i!=1) c-=4;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                W++;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                </div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            </div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            W+=(1&lt;&lt;(i-1));</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="comment">//Butterflies</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            s=1;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            Mn*=2;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <span class="keywordflow">for</span> (rv=0;  rv&lt;Mn;  rv++){          <span class="comment">//o número de butterflies começa em 1 e dobra a cada laço do for(i=...</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                <span class="keywordflow">for</span> (j=0;   j&lt;(n&gt;&gt;2);   j++){       </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                    v1 = j + rv*(n&gt;&gt;1);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                    v2 = -j + rv*(n&gt;&gt;1) + ((n&gt;&gt;1)-1);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                    aux = y[v1]*s + y[v2];</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                    y[v2] = -y[v2]*s + y[v1];</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                    y[v1] = aux;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                s*=-1;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            n&gt;&gt;=1;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        W += (1&lt;&lt;i);  </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        c = (2&lt;&lt;i) - 2;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="comment">//5 - Multiplicação pelos últimos cossenos e senos</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordflow">for</span> (j=0;   j&lt;(N_2/2);  j++){</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            v1 = j;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            v2 = N_2-1 - j;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            </div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            aux =  y[v1] * (*(W+1));</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            aux += y[v2] * (*W);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            W+=c;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            y[v2] *= *(W);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            y[v2] -= y[v1] * (*(W+1));</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            y[v1] = aux;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            </div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            W-=c;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            </div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            c-=4;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            W+=2;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        }</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        N&gt;&gt;=1;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        N_2&gt;&gt;=1;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        y=y0;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        W=w0;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        n=N;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div>
+<div class="ttc" id="DCT_8c_html_ab2e4a1db340ddcd09b6f0a6c6fd0802b"><div class="ttname"><a href="DCT_8c.html#ab2e4a1db340ddcd09b6f0a6c6fd0802b">litDCT</a></div><div class="ttdeci">int litDCT(unsigned int N, float *x, float *ans)</div><div class="ttdef"><b>Definition:</b> DCT.c:70</div></div>
+<div class="ttc" id="DCT_8c_html_a4a4b6ec654cebc103b3e88037cf29de8"><div class="ttname"><a href="DCT_8c.html#a4a4b6ec654cebc103b3e88037cf29de8">M_R2</a></div><div class="ttdeci">#define M_R2</div><div class="ttdef"><b>Definition:</b> DCT.c:3</div></div>
+<div class="ttc" id="DCT_8c_html_ac3ae0584d0b11b8637f3ddc0cbecc2e2"><div class="ttname"><a href="DCT_8c.html#ac3ae0584d0b11b8637f3ddc0cbecc2e2">bitrev2</a></div><div class="ttdeci">void bitrev2(int n, float *ptrt, float *ptrf)</div><div class="ttdef"><b>Definition:</b> DCT.c:12</div></div>
+<div class="ttc" id="DCT_8c_html_a29c4825315ce5443b84f148992eea56d"><div class="ttname"><a href="DCT_8c.html#a29c4825315ce5443b84f148992eea56d">M_R2_2</a></div><div class="ttdeci">#define M_R2_2</div><div class="ttdef"><b>Definition:</b> DCT.c:4</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab2e4a1db340ddcd09b6f0a6c6fd0802b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int litDCT </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>N</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>ans</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calcula a transformada literal do cosseno em tempo discreto </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">N</td><td>numero de pontos da DCT </td></tr>
+    <tr><td class="paramname">x</td><td>vetor de pontos de entrada </td></tr>
+    <tr><td class="paramname">ans</td><td>vetor de pontos de saida </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna 1 </dd></dl>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">int</span> i, j, N2;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">float</span> mult;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    mult=1/(sqrt(N));</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    N2=2*N;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    ans[0]=0;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">for</span> (j=0;   j&lt;N;    j++){</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        ans[0]+=x[j];</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    ans[0]*=mult;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    mult*=<a class="code" href="DCT_8c.html#a4a4b6ec654cebc103b3e88037cf29de8">M_R2</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">for</span> (i=1;   i&lt;N;    i++){</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        ans[i]=0;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">for</span> (j=0;   j&lt;N;    j++){</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            ans[i]+=x[j]*cos(M_PI*(2*j+1)*i/N2);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        ans[i]*=mult;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="ttc" id="DCT_8c_html_a4a4b6ec654cebc103b3e88037cf29de8"><div class="ttname"><a href="DCT_8c.html#a4a4b6ec654cebc103b3e88037cf29de8">M_R2</a></div><div class="ttdeci">#define M_R2</div><div class="ttdef"><b>Definition:</b> DCT.c:3</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a81722a8a34caaa16b5e7936cbaef57d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float* W_coef </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>N</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calcula os senos e cossenos para dct de N pontos </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">N</td><td>numero de pontos da DCT </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna os coeficientes em um vetor de float </dd></dl>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                             {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">int</span> i, j;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> l;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">float</span> ang0, ang1;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">float</span> *W, *w0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">for</span> (i=(N&gt;&gt;1), N=0; i&gt;1; i&gt;&gt;=1){</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">for</span> (j=i;   j&gt;1; j&gt;&gt;=1){</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            N+=j;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    W=malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">float</span>)*2*N);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span>(W==NULL) <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    w0=W;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ang0=(float)M_PI/4;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    l=1;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">for</span> (i=2;   i&lt;=N;   i&lt;&lt;=1){</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">for</span> (j=(i&gt;&gt;1);  j&lt;(i);  j++){</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            ang1=<a class="code" href="FFT_8h.html#a4302f2fa5ae9348486ed46acbce0cc98">btrv</a>(j,l)*ang0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            (*W)=cos(ang1);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            W++;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            (*W)=sin(ang1);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            W++;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        ang0/=2;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        l++;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> w0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="ttc" id="FFT_8h_html_a4302f2fa5ae9348486ed46acbce0cc98"><div class="ttname"><a href="FFT_8h.html#a4302f2fa5ae9348486ed46acbce0cc98">btrv</a></div><div class="ttdeci">int btrv(int i, int l)</div><div class="ttdef"><b>Definition:</b> FFT.c:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 27 de Outubro de 2016 16:23:52 para  Módulo de Extração por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

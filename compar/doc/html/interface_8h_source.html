@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title> Módulo de Comparação: Código-Fonte de interface.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname"> Módulo de Comparação
+   </div>
+   <div id="projectbrief">Detecção Automática de Padrões de Áudio em Transmissões de Rádio e TV</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href= "../../../readme.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Arquivos&#160;Membros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definições e Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b0856f6b0d80ccb263b2f415c91f9e17.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">interface.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="interface_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by arthurf on 04/05/16.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span><span class="preprocessor">#ifndef INTERFACE_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define INTERFACE_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">    #include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">    #include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">    #include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">    #include &lt;confuse.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="matching_8h.html">matching.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="interface_8h.html#adf7753bca6569270f23ed628e3a62ca5">   17</a></span>&#160;<span class="preprocessor">    #define CONF_PARAM          &quot;-c&quot;            </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="interface_8h.html#a2e78726213f2ae041da0afd02ef0a2cc">   18</a></span>&#160;<span class="preprocessor">    #define PPARAM              &quot;-p&quot;            </span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="interface_8h.html#af67bf18320a56586d36cac6972b736f3">   19</a></span>&#160;<span class="preprocessor">    #define EXT_LIST_DEF        &quot;.txt&quot;          </span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="interface_8h.html#a0c4a0b9143ca8c5e8fa76e0b79b68049">   20</a></span>&#160;<span class="preprocessor">    #define EXT_MFCC_DEF        &quot;.mfc&quot;          </span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="interface_8h.html#a1db4cb83243e611829ea036a5cf5c74e">   21</a></span>&#160;<span class="preprocessor">    #define EXT_DEST_DEF        &quot;.csv&quot;          </span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="interface_8h.html#ad1f79d9d99776d7353c6659c307c83c6">   22</a></span>&#160;<span class="preprocessor">    #define MAXN                100             </span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="interface_8h.html#a6f812031d5761117c4a2cbb5655cccc7">   23</a></span>&#160;<span class="preprocessor">    #define ERR_EXT             0x01            </span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="interface_8h.html#a33e05fcb0fbb75571a2692680079f579">   24</a></span>&#160;<span class="preprocessor">    #define ERR_OPN             0x02            </span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="interface_8h.html#ad4258ddc76f88a664cfdd6ba15385e83">   25</a></span>&#160;<span class="preprocessor">    #define ERR_PAR             0x03            </span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="interface_8h.html#a9ce387de2e4afd518c6b896e110f82ee">   26</a></span>&#160;<span class="preprocessor">    #define ERR_ENT             0xFF            </span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="interface_8h.html#a7ffdabda72286e08cefa2e0f35285d61">   27</a></span>&#160;<span class="preprocessor">    #define TIME_DIF_DEF        2000            </span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="interface_8h.html#ab7b445e518b8ac720512abc4f373b909">   28</a></span>&#160;<span class="preprocessor">    #define ERR_SIL             3               </span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="interface_8h.html#a2335171ef5d3d55f9ab97b805f38419b">   29</a></span>&#160;<span class="preprocessor">    #define ERR_MTC             9               </span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="interface_8h.html#a83ef53af6548fe267b7876e25d47e548">   30</a></span>&#160;<span class="preprocessor">    #define SEM_ANTERIOR        3               </span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="interface_8h.html#aa53d6fcd424474f57d780bddd4554c83">   31</a></span>&#160;<span class="preprocessor">    #define COM_ANTERIOR        5               </span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="interface_8h.html#a33adc042527abd42d655d2c1c7fef112">   32</a></span>&#160;<span class="preprocessor">    #define MXOCUR              500             </span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="interface_8h.html#a955b34f5555abe394d947df4f3a12445">   33</a></span>&#160;<span class="preprocessor">    #define CONFNAME            &quot;matching.conf&quot; </span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="interface_8h.html#a3ca200e3aa08a1f6b308134b29b3a9ea">   34</a></span>&#160;<span class="preprocessor">    #define NSA_ANT             3               </span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="interface_8h.html#a687486dc2068a2b58b60a672c2f02287">   35</a></span>&#160;<span class="preprocessor">    #define ERRO_ANT            2               </span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="interface_8h.html#aeb45cb05a18f9a2135f65960ee189e70">   36</a></span>&#160;<span class="preprocessor">    #define FIND_ANT            1               </span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="interface_8h.html#a29d7db451631a608e6e060f15b391fbe">   37</a></span>&#160;<span class="preprocessor">    #define N_FIND_ANT          0               </span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="interface_8h.html#a3075e24c18b69d3dc190c950fd8bd259">   39</a></span>&#160;<span class="preprocessor">    #define SAIDA_PADRAO        stderr          </span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="interface_8h.html#ab6d10caa87eb04033803de5a49867c02">   40</a></span>&#160;<span class="preprocessor">    #define NEI                 4               </span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    extern char EXT_LIST[10];   </span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">    extern char EXT_MFCC[10];   </span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">    extern char EXT_DEST[10];   </span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">    extern int TIME_DIF;        </span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">    int testa_inteiro(int valor, int li, int ls);</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="interface_8h.html#a86e00533a8999e4c477b75defc9e8013">testa_conf</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="interface_8h.html#ab5a693cc08cea85221f05d034132d788">new_conf</a>(<span class="keywordtype">char</span>* name);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="interface_8h.html#a07d4ea70c9c7d4edf1ffb96ab755e649">load_conf</a>(<span class="keywordtype">char</span>* name);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="interface_8h.html#a27b6b99a835e3b05275d0b1aa7e194a6">conf_par</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a1b092003711f9f84abde20eb2a931222">desloca_argv</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv, <span class="keywordtype">int</span> p);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_8h.html#aee9a77aca0122d0e22d8d15d170fdd69">tolow</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="interface_8h.html#a4c116f8e94e67ff02800a47f91090208">stristr</a>(<span class="keywordtype">char</span>* str, <span class="keywordtype">char</span>* ext);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="interface_8h.html#aa2f654f16d61988b9875b5ae63d77ce9">testa_extensao</a>(<span class="keywordtype">char</span> *str, <span class="keywordtype">char</span> *ext);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="interface_8h.html#a8ec221d5b8cb068eae15bb5e69d91311">testa_arquivo</a>(FILE** arq, <span class="keywordtype">char</span>* name, <span class="keywordtype">char</span>* ext);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="interface_8h.html#a89c3bf3854dd30c51a4f39e7cbc1a932">interpIn</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv, FILE** prop, FILE** prog, FILE** pprog, FILE** out);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="interface_8h.html#aed6cc71dc91a7ffb20aa4b5e317f2f54">MAGIC</a>(FILE* fil);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="interface_8h.html#ac9c6d1b5aa93e62a7c103a299db869b5">err2</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> inType, <span class="keywordtype">char</span>* erros);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="interface_8h.html#a4b1ddbb7f16360b967c1b26ad716dd7a">errmt</a>(<span class="keywordtype">int</span> n, <span class="keywordtype">char</span>*erros);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a9c53dfe87d7c8926b0c352776dbf13d1">RelGen</a>(FILE* out, <span class="keywordtype">char</span>* prop, <span class="keywordtype">char</span>* prog, <span class="keywordtype">int</span>* t, <span class="keywordtype">int</span>* vr, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* flag, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* prev, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* g, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="interface_8h.html#abfd6bbe1ffedcb62fd82200087938ae7">myfgets</a>(<span class="keywordtype">char</span>* fname, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s, FILE* fil);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="interface_8h.html#aeb92ad3ea2bcc207df437b1eccf5e436">cpyMFCC</a>(int16_t** in, int16_t** out, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nCoef);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">char</span> <a class="code" href="interface_8h.html#ac1240b45d5cd6e24bafd900e67143181">testa_parametros</a>(<a class="code" href="structcabecalho.html">cabecalho</a> C1, <a class="code" href="structcabecalho.html">cabecalho</a> C2);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="interface_8h.html#ac5dd88d6cc98acd0e003c185d9fc1555">err_param</a>(<span class="keywordtype">char</span>* erros);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    int16_t **<a class="code" href="interface_8h.html#abbc8692ea8afe58345654465b22bcfd4">loadFile</a>(FILE* fil, <a class="code" href="structcabecalho.html">cabecalho</a> *C);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="interface_8h.html#aed0a0002fcc607704fc316077a19e13e">loadAnt</a>(<a class="code" href="structcabecalho.html">cabecalho</a> *Cpg, <a class="code" href="structcabecalho.html">cabecalho</a> Cg, int16_t*** prog, FILE *pprogf, <span class="keywordtype">char</span> *erros, <span class="keywordtype">int</span> *flagE);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="interface_8h.html#a487d76fffcbee02367a5ff13ff0a2e5b">comparacao</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv, <span class="keywordtype">char</span> *erros);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif //INTERFACE_H</span></div>
+<div class="ttc" id="interface_8h_html_a487d76fffcbee02367a5ff13ff0a2e5b"><div class="ttname"><a href="interface_8h.html#a487d76fffcbee02367a5ff13ff0a2e5b">comparacao</a></div><div class="ttdeci">int comparacao(int argc, char **argv, char *erros)</div><div class="ttdef"><b>Definition:</b> interface.c:563</div></div>
+<div class="ttc" id="interface_8h_html_a8ec221d5b8cb068eae15bb5e69d91311"><div class="ttname"><a href="interface_8h.html#a8ec221d5b8cb068eae15bb5e69d91311">testa_arquivo</a></div><div class="ttdeci">unsigned char testa_arquivo(FILE **arq, char *name, char *ext)</div><div class="ttdef"><b>Definition:</b> interface.c:277</div></div>
+<div class="ttc" id="structcabecalho_html"><div class="ttname"><a href="structcabecalho.html">cabecalho</a></div><div class="ttdoc">Cabeçalho para arquivo binário &quot;.mfc&quot;. </div><div class="ttdef"><b>Definition:</b> coef_dist.h:46</div></div>
+<div class="ttc" id="interface_8h_html_a07d4ea70c9c7d4edf1ffb96ab755e649"><div class="ttname"><a href="interface_8h.html#a07d4ea70c9c7d4edf1ffb96ab755e649">load_conf</a></div><div class="ttdeci">int load_conf(char *name)</div><div class="ttdef"><b>Definition:</b> interface.c:152</div></div>
+<div class="ttc" id="interface_8h_html_ab5a693cc08cea85221f05d034132d788"><div class="ttname"><a href="interface_8h.html#ab5a693cc08cea85221f05d034132d788">new_conf</a></div><div class="ttdeci">int new_conf(char *name)</div><div class="ttdef"><b>Definition:</b> interface.c:101</div></div>
+<div class="ttc" id="matching_8h_html"><div class="ttname"><a href="matching_8h.html">matching.h</a></div><div class="ttdoc">Operaçoes de analise macroscópica das informaçoes geradas na comparaçao entre propaganda e programaçã...</div></div>
+<div class="ttc" id="interface_8h_html_ac5dd88d6cc98acd0e003c185d9fc1555"><div class="ttname"><a href="interface_8h.html#ac5dd88d6cc98acd0e003c185d9fc1555">err_param</a></div><div class="ttdeci">int err_param(char *erros)</div><div class="ttdef"><b>Definition:</b> interface.c:484</div></div>
+<div class="ttc" id="interface_8h_html_a1b092003711f9f84abde20eb2a931222"><div class="ttname"><a href="interface_8h.html#a1b092003711f9f84abde20eb2a931222">desloca_argv</a></div><div class="ttdeci">void desloca_argv(int argc, char **argv, int p)</div><div class="ttdef"><b>Definition:</b> interface.c:219</div></div>
+<div class="ttc" id="interface_8h_html_aed6cc71dc91a7ffb20aa4b5e317f2f54"><div class="ttname"><a href="interface_8h.html#aed6cc71dc91a7ffb20aa4b5e317f2f54">MAGIC</a></div><div class="ttdeci">int MAGIC(FILE *fil)</div><div class="ttdef"><b>Definition:</b> interface.c:338</div></div>
+<div class="ttc" id="interface_8h_html_a86e00533a8999e4c477b75defc9e8013"><div class="ttname"><a href="interface_8h.html#a86e00533a8999e4c477b75defc9e8013">testa_conf</a></div><div class="ttdeci">int testa_conf()</div><div class="ttdef"><b>Definition:</b> interface.c:65</div></div>
+<div class="ttc" id="interface_8h_html_aa2f654f16d61988b9875b5ae63d77ce9"><div class="ttname"><a href="interface_8h.html#aa2f654f16d61988b9875b5ae63d77ce9">testa_extensao</a></div><div class="ttdeci">int testa_extensao(char *str, char *ext)</div><div class="ttdef"><b>Definition:</b> interface.c:262</div></div>
+<div class="ttc" id="interface_8h_html_a27b6b99a835e3b05275d0b1aa7e194a6"><div class="ttname"><a href="interface_8h.html#a27b6b99a835e3b05275d0b1aa7e194a6">conf_par</a></div><div class="ttdeci">int conf_par(int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> interface.c:204</div></div>
+<div class="ttc" id="interface_8h_html_ac9c6d1b5aa93e62a7c103a299db869b5"><div class="ttname"><a href="interface_8h.html#ac9c6d1b5aa93e62a7c103a299db869b5">err2</a></div><div class="ttdeci">int err2(unsigned char inType, char *erros)</div><div class="ttdef"><b>Definition:</b> interface.c:357</div></div>
+<div class="ttc" id="interface_8h_html_abbc8692ea8afe58345654465b22bcfd4"><div class="ttname"><a href="interface_8h.html#abbc8692ea8afe58345654465b22bcfd4">loadFile</a></div><div class="ttdeci">int16_t ** loadFile(FILE *fil, cabecalho *C)</div><div class="ttdef"><b>Definition:</b> interface.c:496</div></div>
+<div class="ttc" id="interface_8h_html_a9c53dfe87d7c8926b0c352776dbf13d1"><div class="ttname"><a href="interface_8h.html#a9c53dfe87d7c8926b0c352776dbf13d1">RelGen</a></div><div class="ttdeci">void RelGen(FILE *out, char *prop, char *prog, int *t, int *vr, unsigned char *flag, unsigned char *prev, unsigned char *g, unsigned int n)</div><div class="ttdef"><b>Definition:</b> interface.c:428</div></div>
+<div class="ttc" id="interface_8h_html_aed0a0002fcc607704fc316077a19e13e"><div class="ttname"><a href="interface_8h.html#aed0a0002fcc607704fc316077a19e13e">loadAnt</a></div><div class="ttdeci">int loadAnt(cabecalho *Cpg, cabecalho Cg, int16_t ***prog, FILE *pprogf, char *erros, int *flagE)</div><div class="ttdef"><b>Definition:</b> interface.c:543</div></div>
+<div class="ttc" id="interface_8h_html_a89c3bf3854dd30c51a4f39e7cbc1a932"><div class="ttname"><a href="interface_8h.html#a89c3bf3854dd30c51a4f39e7cbc1a932">interpIn</a></div><div class="ttdeci">unsigned char interpIn(int argc, char **argv, FILE **prop, FILE **prog, FILE **pprog, FILE **out)</div><div class="ttdef"><b>Definition:</b> interface.c:301</div></div>
+<div class="ttc" id="interface_8h_html_aeb92ad3ea2bcc207df437b1eccf5e436"><div class="ttname"><a href="interface_8h.html#aeb92ad3ea2bcc207df437b1eccf5e436">cpyMFCC</a></div><div class="ttdeci">void cpyMFCC(int16_t **in, int16_t **out, unsigned int s, unsigned int nCoef)</div><div class="ttdef"><b>Definition:</b> interface.c:457</div></div>
+<div class="ttc" id="interface_8h_html_a4b1ddbb7f16360b967c1b26ad716dd7a"><div class="ttname"><a href="interface_8h.html#a4b1ddbb7f16360b967c1b26ad716dd7a">errmt</a></div><div class="ttdeci">int errmt(int n, char *erros)</div><div class="ttdef"><b>Definition:</b> interface.c:396</div></div>
+<div class="ttc" id="interface_8h_html_a4c116f8e94e67ff02800a47f91090208"><div class="ttname"><a href="interface_8h.html#a4c116f8e94e67ff02800a47f91090208">stristr</a></div><div class="ttdeci">char * stristr(char *str, char *ext)</div><div class="ttdef"><b>Definition:</b> interface.c:245</div></div>
+<div class="ttc" id="interface_8h_html_abfd6bbe1ffedcb62fd82200087938ae7"><div class="ttname"><a href="interface_8h.html#abfd6bbe1ffedcb62fd82200087938ae7">myfgets</a></div><div class="ttdeci">int myfgets(char *fname, unsigned int s, FILE *fil)</div><div class="ttdef"><b>Definition:</b> interface.c:445</div></div>
+<div class="ttc" id="interface_8h_html_aee9a77aca0122d0e22d8d15d170fdd69"><div class="ttname"><a href="interface_8h.html#aee9a77aca0122d0e22d8d15d170fdd69">tolow</a></div><div class="ttdeci">void tolow(char *str)</div><div class="ttdef"><b>Definition:</b> interface.c:230</div></div>
+<div class="ttc" id="interface_8h_html_ac1240b45d5cd6e24bafd900e67143181"><div class="ttname"><a href="interface_8h.html#ac1240b45d5cd6e24bafd900e67143181">testa_parametros</a></div><div class="ttdeci">char testa_parametros(cabecalho C1, cabecalho C2)</div><div class="ttdef"><b>Definition:</b> interface.c:472</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 27 de Outubro de 2016 16:23:46 para  Módulo de Comparação por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

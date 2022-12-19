@@ -1,0 +1,151 @@
+/*
+ * This is the main page of the JACK reference manual, built using
+ * doxygen.
+ */
+
+/**
+
+ @mainpage Detecção Automática de Padrões de Áudio em Transmissões de Rádio e TV - Módulo de Extração
+
+ @section intro_sec Introdução
+
+ Este projeto visa desenvolver algoritmos para localização de segmentos de áudio pré-definidos numa gravação de emissão de rádio. O projeto foi dividido em dois módulos: um de extração, que extrai faixas de áudio a partir de arquivos de vídeo, e calcula os coeficientes MFC; e um de comparação, que realiza a busca de propagandas em um arquivo alvo comparando os coeficientes extraídos previamente.
+
+ @section modulo_ext Módulo de Extração
+ Recebem arquivos de vídeo do tipo .wmv e separa seus audios em arquivos .wav. Extrai os Coeficientes Cepstrais de Frequência Mel (MFCC) dos arquivos de audio e os salva em arquivos .mfc.
+
+ @subsection entrada Entrada
+ Para executar o módulo é chamada a função “extracao”. A mesma deve ser feita da seguinte maneira:
+
+ - **int** extracao(**int** argc, **char** \*argv[], **char** erro[]);
+
+	Parâmetros:
+
+ - **argc:** número de argumentos na chamada do programa;
+
+ - **argv:** vetor de argumentos na chamada do programa;
+
+ - **erro:** vetor de erros. Cada posição retorna o status de erro de um arquivo ou pode também retornar apenas um erro das validações de dados que fez a execução do sistema parar. Ele deve ser declarado com um numero igual ou maior de arquivos de vídeo que serão enviados na entrada. Retorno: número de posições do vetor erro.
+
+ Retorno: número de posições do vetor erro.
+
+ @subsubsection argumentos Argumentos
+
+Deve ser informado arquivo(s) de vídeo e diretório(s) como argumentos. Os mesmos podem estar dispostos de duas maneiras:
+
+* - Somente um arquivo e um diretório. Ex.:
+
+    * - **argv[0]:** home/exemplo/video.wmv
+
+    * - **argv[1]:** home/exemplo/resultados
+
+* - Uma lista de vídeos e uma lista de diretórios. Ex.:
+
+    * - **argv[0]:** -l
+
+    * - **argv[1]:** home/exemplo/arquivos.txt
+
+    * - **argv[2]:** home/exemplo/diretórios.txt
+
+Exemplo de lista de arquivos de entrada:
+
+    /home/propagandas/prop01.mp4
+    /home/propagandas/prop02.wmv
+    /home/propagandas/prop03.asf
+    /home/propagandas/prop04.wmv
+    /home/propagandas/prog01.mp4
+    /home/propagandas/prog02.wmv
+    /home/propagandas/prog03.asf
+
+
+Exemplo de lista de diretórios de entrada:
+
+    /home/extracao/propagandas/
+    /home/extracao/propagandas/
+    /home/extracao/propagandas/
+    /home/extracao/propagandas/
+    /home/extracao/programação/
+    /home/extracao/programação/
+    /home/extracao/programação/
+
+@subsubsection exte Extensões
+As extensões de todos arquivos de todos arquivos informados devem seguir um padrão. *Quando é diretório só é necessário terminá-lo com “/”.* As demais extensões são as seguintes:
+* - Para os arquivos de vídeo: “.wmv”, “.asf” ou “.mp4”;
+* - Para os arquivos das listas: “.txt”;
+
+ @subsection arquvos Arquivo de características do áudio ".mfc"
+
+O arquivo que contém as características do áudio possui uma extensão específica, “.mfc”. É um documento binário que apresenta um cabeçalho, com todas as informações do áudio, e as amostras do sinal.
+
+ @subsubsection nome_do_arquivo Nome do arquivo
+O nome do arquivo “.mfc” é montado utilizando os parâmetros informados na entrada. O nome do vídeo é concatenado com a string “.mfc” para formar o nome do arquivo. O diretório informado é o mesmo que esse arquivo é salvo. Exemplo:
+* - Entrada:
+* - **argv[0]:** /home/exemplo/video.wmv
+* - **argv[1]:** /home/exemplo/resultados/
+* - Arquivo “.mfc”:
+* - **Arquivo:** /home/exemplo/resultados/video.mfc
+
+ @subsubsection info_do_arq Informações do arquivo
+A estrutura das informações contidas no arquivo “.mfc” é a seguinte:
+* - **4 bytes:** "MFCC";
+* - **2 bytes:** número de pontos da fft;
+* - **2 bytes:** distância entre duas janelas;
+* - **2 bytes:** número de coeficientes de cada janela;
+* - **2 bytes:** número de coeficientes gravados no arquivo ".mfc";
+* - **4 bytes:** tamanho da matriz de coeficientes;
+* - **Tamanho variável:** matriz de coeficientes;
+
+ @subsection saida Saída
+ São alocadas em um vetor as informações sobre o status de cada conjunto de arquivo de vídeo e diretório provenientes da entrada. Se for encontrado algum erro de validação nos argumentos de entrada, será também mostrado nesse vetor. A primeira posição é sempre reservada para indicar o número de posições usadas.
+
+ @subsubsection error_list Status
+ Status
+* - **0:** Arquivos de vídeo extraídos sem nenhum erro;
+* - **1:** Número de argumentos informados inválido, verifique a chamada da extração;
+* - **2:** Arquivo de vídeo é válido, verifique se possui algumas das seguintes extensões: ".wmv",".asf" ou “.mp4”;
+* - **3:** Arquivo não encontrado,verifique se o nome está correto;
+* - **4:** Diretório não é reconhecido como um diretório, verifique se o mesmo é finalizado com o caractere “/”;
+* - **5:** Diretório não encontrado,verifique se o nome está correto;
+* - **6:** (Erro interno) Não foi possível converter o arquivo de vídeo, verifique se a FFmpeg está funcionando corretamente;
+* - **7:** (Erro interno) Nome do arquivo de áudio não especificado;
+* - **8:** (Erro interno) Não foi possível abrir o arquivo de áudio;
+* - **9:** (Erro interno) Arquivo de áudio quebrado;
+* - **10:** (Erro interno) Arquivo de áudio inválido;
+* - **11:** (Erro interno) Não foi possível codificar o PCM;
+* - **12:** (Erro interno) Cabeçalho do arquivo de áudio inválido;
+* - **13:** (Erro interno) Falha na alocação da memória dos coeficientes do arquivo de áudio;
+* - **14:** (Erro interno) Amostras do arquivo de áudio quebradas;
+* - **15:** (Erro interno) Não foi possível deletar o arquivo de áudio;
+* - **16:** (Erro interno) Falha ao criar arquivo “.mfc”;
+* - **17:** (Erro interno) Arquivo não possui diretório correspondente para salvar arquivo “.mfc”, verifique as listas informadas se o vídeo possui diretório correspondente;
+* - **18:** (Erro interno) Falha na alocação de memória da MFCC;
+* - **19:** (Erro interno) Falha na geração dos coeficientes da FFT;
+* - **20:** (Erro interno) Falha na geração dos coeficientes da DCT;
+* - **21:** (Erro interno) Falha no cálculo da FFT;
+* - **22:** (Erro interno) Falha no cálculo da DCT;
+* - **23:** Lista não possui extensão “.txt”, verifique os parâmetros de entrada;
+* - **24:** Arquivo de configurações possui variáveis não compatíveis;
+
+ @subsection configuracao Arquivo de configuracao
+    Alguns parâmetros do programa podem ser configurados. Para utilizar um arquivo de configurações específico, basta acrescentar "-c nome_do_arquivo_de_configuracoes" aos parâmetros de entrada. Caso não seja informado um arquivo de configurações, será utilizado o arquivo padrão "extraction.conf", que pode ser modificado desde que dentro das condições. Ele está na mesma pasta do programa. Caso o arquivo ainda não exista, ao executar o programa, será criado o arquivo padrão. O arquivo de configurações tem a seguinte estrutura:
+
+
+
+    #EXTENSOES PARA ARQUIVOS DE VIDEO
+    EXT_1 = .wmv
+    EXT_2 = .asf
+    EXT_3 = .mp4
+    EXT_4 = none
+    EXT_5 = none
+    #NUMERO DE JANELAS (OBS.: O VALOR DEVE ESTAR ENTRE 128 E A METADE DA FFT E SER POTENCIA DE 2)
+    STP = 512
+    #TAMANHO DA FFT (OBS.: O VALOR DEVE ESTAR ENTRE 512 E 2048 E SER POTENCIA DE 2)
+    FFT = 1024
+    #NUMERO DE COEFICIENTES (OBS.: O VALOR DEVE ESTAR ENTRE 8 E 32)
+    NCO = 20
+    #NUMERO DE COEFICIENTES PARA SALVAR NO ARQUIVO '.mfc' (OBS.: O VALOR DEVE ESTAR ENTRE 8 E 32)
+    CMP = 13
+
+ As variáveis EXT_1 até a EXT_2 recebem as extensões de arquivos de vídeo que o programa poderá receber. A STP indica o número de janelas, a FFT o tamanho da FFT e a NCO o número de coefientes para o cálculo dos coeficientes na MFCC. A CMP indica o número de coeficientes que quer salvar no arquivo mfc.
+
+    */

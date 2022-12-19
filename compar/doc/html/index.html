@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Módulo de Comparação: Detecção Automática de Padrões de Áudio em Transmissões de Rádio e TV - Módulo de Comparação</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Módulo de Comparação
+   </div>
+   <div id="projectbrief">Detecção Automática de Padrões de Áudio em Transmissões de Rádio e TV</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href= "../../../readme.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Arquivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definições e Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Detecção Automática de Padrões de Áudio em Transmissões de Rádio e TV - Módulo de Comparação </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="modulo_comp"></a>
+Módulo de Comparação</h1>
+<p>Compara um arquivo .mfc (gerado no módulo de extração) referente a um intervalo de programação com uma lista de arquivos .mfc relativos às propagandas. Caso encontre um indício de que uma ou mais propagandas estão contidas no intervalo analisado, gera um relatório com informações sobre as ocorrências.</p>
+<h2><a class="anchor" id="entrada"></a>
+Entrada</h2>
+<p>Para executar o módulo é chamada a função “comparacao”. A mesma deve ser feita da seguinte maneira:</p>
+<ul>
+<li><p class="startli"><b>int</b> comparacao(<b>int</b> argc, <b>char</b> *argv[], <b>char</b> *erros);</p>
+<p class="startli">Parâmetros:</p>
+</li>
+<li><b>argc:</b> número de argumentos na chamada do programa;</li>
+<li><b>argv:</b> vetor de argumentos na chamada do programa;</li>
+<li><b>erros:</b> vetor que guarda os códigos dos erros que ocorreram durante a rotina. Deve ser alocado antes de ser passado como parâmetro, seu tamanho deve ser n+4, onde n é igual ao número de comparações.</li>
+</ul>
+<p>Retorno: número de erros que ocorreram durante a execução da rotina.</p>
+<h3><a class="anchor" id="argumentos"></a>
+Argumentos</h3>
+<p>Recebe como entradas: o caminho para um arquivo “.txt” contendo os caminhos para os arquivos de propaganda “.mfc” gerados no módulo de extração; o caminho para o arquivo de programação “.mfc”; opcionalmente, o argumento '-p' e o caminho para o arquivo de programação anterior “.mfc”; o caminho para o arquivo de saída “.csv”; e, opcionalmente, o argumento '-c' e o caminho para o arquivo de configuração “.conf”.</p>
+<p><b>Caso o arquivo “.csv” fornecido já exista, a informação nele gravada anteriormente será perdida.</b></p>
+<p>Caso o arquivo de configuração não seja indicado, será carregado o arquivo “matching.conf”.</p>
+<p>Caso o arquivo de configuração carregado esteja quebrado (ou não exista), será sobrescrito (ou criado) um arquivo com as configurações padrão e o sistema irá parar a execução.</p>
+<p>Os argumentos podem estar dispostos das seguintes maneiras:</p>
+<ul>
+<li>Um arquivo de propaganda. Ex.:<ul>
+<li><b>argv[0]:</b> CAMINHO/PARA/PROPS.txt</li>
+<li><b>argv[1]:</b> CAMINHO/PARA/PROG.mfc</li>
+<li><b>argv[2]:</b> CAMINHO/PARA/RELATORIO.csv</li>
+<li><b>argv[3]:</b> -c</li>
+<li><b>argv[4]:</b> CAMINHO/PARA/CONFIGURACOES.conf</li>
+</ul>
+</li>
+<li>Um arquivo de propaganda com o anterior. Ex.:<ul>
+<li><b>argv[0]:</b> CAMINHO/PARA/PROPS.txt</li>
+<li><b>argv[1]:</b> CAMINHO/PARA/PROG.mfc</li>
+<li><b>argv[2]:</b> -p</li>
+<li><b>argv[3]:</b> CAMINHO/PARA/PROGant.mfc</li>
+<li><b>argv[4]:</b> CAMINHO/PARA/RELATORIO.csv</li>
+<li><b>argv[5]:</b> -c</li>
+<li><b>argv[6]:</b> CAMINHO/PARA/CONFIGURACOES.conf</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="retorn"></a>
+Retorno</h3>
+<p>O valor de retorno da função é o número de erros que ocorreram durante a execução da rotina. Zero (0) significa que tudo correu bem.</p>
+<p>Além disso o terceiro parâmetro recebido é o endereço de um vetor de inteiros utilizado para escrever os códigos de erro gerados durante a execução do sistema.</p>
+<p>Os quatro primeiros termos do vetor são reservados para erros ocorridos durante a inicialização. Se algum destes for diferente de zero significa que o processo foi parado logo no início e nenhuma propaganda foi comparada.</p>
+<p>Os próximos termos são os valores de erro referentes ao carregamento e à comparação de cada uma das propagandas listadas.</p>
+<p>Assim, o tamanho desse vetor é “n+4”, sendo 'n' o número de propagandas listadas.</p>
+<p>Para verificar a ocorrência de um erro em determinada propaganda deve-se acessar o termo de índice igual a “m+4”, sendo 'm' a posição da propaganda na lista.</p>
+<ul>
+<li>Exemplo de vetor de erros :<ul>
+<li>002 Falha na abertura</li>
+<li>128 Falha na abertura</li>
+<li>000</li>
+<li>000</li>
+<li>000 Sucesso (Erro referente à 1ª propaganda)</li>
+<li>002 Falha na abertura (Erro referente à 2ª propaganda)</li>
+<li>002 Falha na abertura (Erro referente à 3ª propaganda)</li>
+<li>000 Sucesso (Erro referente à 4ª propaganda)</li>
+<li>002 Falha na abertura (Erro referente à 5ª propaganda)</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="saida"></a>
+Saída</h2>
+<p>No arquivo “.csv” indicado são registradas as ocorrências encontradas, onde:</p>
+<ul>
+<li>O primeiro campo é o caminho para o arquivo de programação;</li>
+<li>O segundo campo é o caminho para o arquivo de propaganda;</li>
+<li>O terceiro campo é uma flag que vale zero (0) caso a ocorrência encontrada comece depois do inicio do corte ou um (1) em caso contrário;</li>
+<li>O quarto campo é uma flag relativa às ocorrências que iniciam no alvo anterior, pode assumir quatro valores: zero (0) se a ocorrência não foi encontrada no anterior; um (1) se a ocorrência foi encontrada também no anterior; dois (2) se não foi possível procurar pela propaganda no arquivo anterior; ou três (3) se não se aplica;</li>
+<li>O quinto campo uma flag que indica se a propaganda está completa ou não, pode assumir três valores: zero (0) se não foi encontrado o final da propaganda dentro do corte de programação; um (1) se foi encontrado o final da propaganda dentro do corte de programação; dois (2) se ocorreu um erro durante a procura do final da propaganda;</li>
+<li>O sexto campo é o tempo em minutos e segundos após (ou antes dependendo do valor da flag) o inicio do corte em que a ocorrência foi registrada;</li>
+<li>O sétimo campo é o grau de confiabilidade da ocorrência, que pode variar de zero a mil.</li>
+</ul>
+<p>Exemplo:</p>
+<ul>
+<li><em>VIDEOS/100-CUI-20150802/000000.mfc;CORTES/644070.mfc;0;3;1;01:13;803;</em></li>
+</ul>
+<h3><a class="anchor" id="error_list"></a>
+Lista de erros</h3>
+<ul>
+<li>001: Erro na extensão do arquivo de propaganda</li>
+<li>002: Erro na abertura do arquivo de propaganda</li>
+<li>003: Propaganda com demasiado silêncio</li>
+<li>004: Erro na extensão do arquivo de programação</li>
+<li>005: Parâmetros do cabeçalho dos arquivos .mfc não coincidem</li>
+<li>006: Arquivo de configuracao quebrado</li>
+<li>008: Erro na abertura do arquivo de programação</li>
+<li>009: Erro na comparação dos coeficientes</li>
+<li>016: Erro na extensão do arquivo de saída</li>
+<li>032: Erro na abertura do arquivo de saída</li>
+<li>064: Erro na extensão do arquivo de programação anterior</li>
+<li>128: Erro na abertura do arquivo de programação anterior</li>
+<li>192: Erro no parâmetro de arquivo de programação anterior</li>
+<li>255: Entrada invalida</li>
+</ul>
+<h2><a class="anchor" id="configuracao"></a>
+Arquivo de configuracao</h2>
+<p>Da mesma forma que no módulo de extração, alguns parâmetros do módulo de comparação podem ser configurados. Para utilizar um arquivo de configuração específico, basta acrescentar "-c nome_do_arquivo_de_configuracao" aos parâmetros de entrada. Caso não seja informado um arquivo de configurações, será utilizado o arquivo padrão "matching.conf", na mesma pasta do programa. Caso o arquivo ainda não exista, ao executar o programa, será criado o arquivo padrão. O arquivo de configurações tem a seguinte estrutura:</p>
+<pre class="fragment">   #EXTENCAO DOS ARQUIVOS DE LISTA
+   EXT_LISTA = .txt
+   #EXTENCAO DOS ARQUIVOS MFCC
+   EXT_MFCC = .mfc
+   #EXTENCAO DOS ARQUIVOS DE SAIDA
+   EXT_DEST = .csv
+   #DESSINCRONIZAÇÃO TOLERADA NO INICIO DA PROPAGANDA
+   TIME_DIF = 2000 #(ms)
+   #DESSINCRONIZAÇÃO TOLERADA NO FINAL DA PROPAGANDA
+   END_DIF = 256 #(ms)
+
+   #MINIMO DE JANELAS
+   MIN_JAN = 3000 #(ms)
+   #PRECISÃO MINIMA
+   VR_MIN = 500
+
+   #NUMERO DE COEFICIENTES MFCC UTILIZADOS
+   RELEVANCIA = 13
+   #PORCENTAGEM MINIMA DE AUDIO SIGNIFICATIVO
+   VOL_MIN = 60
+</pre><p>Onde os parâmetros <em>EXT_LISTA</em>, <em>EXT_MFCC</em> e <em>EXT_DEST</em> indicam, respectivamente, a extensão do arquivo com a lista de propagandas, a extensão dos arquivos com os coeficientes MFCC e a extensão do arquivo onde será gerado o relatório final.</p>
+<p><em>TIME_DIF</em> é utilizado quando procura-se no corte anterior ao alvo pelo início de uma propaganda encontrada cortada. É a diferença em milissegundos considerada aceitável entre o instante em que se esperava verificar o início da propaganda e o instante que de fato ele foi encontrado.</p>
+<p><em>END_DIF</em> é a diferença em milissegundos considerada aceitável entre o instante em que se esperava verificar o final da propaganda e o instante que de fato ele foi encontrado.</p>
+<p><em>MIN_JAN</em> é a duração mínima em milissegundos de um seguimento que será comparado.</p>
+<p><em>VR_MIN</em> é a confiabilidade mínima para que o resultado seja incluído no relatório.</p>
+<p><em>RELEVANCIA</em> é o número de coeficientes utilizado na comparação. Reduzir esse número torna o processo mais rápido, mas diminui significativamente a qualidade dos resultados.</p>
+<p><em>VOL_MIN</em> é a máxima porcentagem que um segmento pode conter de silêncio e ainda ser considerado na comparação. </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Quinta, 27 de Outubro de 2016 16:23:46
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

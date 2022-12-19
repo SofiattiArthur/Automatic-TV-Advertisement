@@ -1,0 +1,37 @@
+Como usar doxygen:
+
+0)Instalar usando $(sudo) apt-get install doxygen
+
+1) Executar $doxygen -g ConfName
+
+2) Abrir o arquivo de configuracao e editar:
+
+PROJECT_NAME           = "Módulo de Comparação"
+
+PROJECT_BRIEF          = "Detecção Automática de Padrões de Áudio em Transmissões de Rádio e TV"
+
+PROJECT_LOGO           =
+
+OUTPUT_LANGUAGE        = Brazilian
+
+FULL_PATH_NAMES        = NO
+
+# document all entities in the project.
+EXTRACT_ALL            = YES
+
+# document all static members of a file.
+EXTRACT_STATIC         = YES
+
+# specify the root directory that contains the project's source files.
+INPUT                  = /home/xmodulo/source
+
+# search sub-directories for all source files.
+RECURSIVE              = YES
+
+# include the body of functions and classes in the documentation.
+INLINE_SOURCES         = YES
+
+# generate visualization graph by using dot program (part of graphviz package).
+HAVE_DOT               = YES
+
+3) Executar $doxygen ConfName. Serão criadas duas pastas: /html e /latex. Na /html pode-se abrir diretamente no navegador o arquivo index.html e navegar como em um site. Os arquivos latex quando compilados geram um pdf.
